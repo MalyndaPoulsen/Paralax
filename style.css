@@ -1,0 +1,36 @@
+.stage{
+ background: #3c3c3c;
+ height: 400px;
+ width: 400px;
+ padding: 40px;   
+}
+
+
+.bounce-in-overshoot{
+    transition: all 0.1s linear;
+    transform-origin: 30% 100%;
+    animation: .8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    animation-name: bounce-in-overshoot;
+}     
+
+@keyframes bounce-in-overshoot{
+    from{
+        transform: scale(0,0);
+    }
+     
+    40%{
+        transform: scale(1.2,1.4);
+    }
+    
+    65%{
+        transform: scale(1,1);
+    }
+    
+    85%{
+        transform: scale(1.1,1.2);
+    }
+    
+    to{
+        transform: scale(1,1);
+    }
+}
